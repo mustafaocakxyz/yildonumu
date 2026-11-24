@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Yıl Dönümümüz Kutlu Olsun 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💕</text></svg>">
+</head>
+<body>
+    <!-- Intro Screen -->
+    <div id="intro-screen" class="screen active">
+        <div class="hearts-container" id="hearts-container"></div>
+        <div class="intro-content">
+            <div class="intro-text">
+                <span class="word">Yıl</span>
+                <span class="word">Dönümümüz</span>
+                <span class="word">Kutlu</span>
+                <span class="word">Olsun</span>
+            </div>
+            <div class="heart-icon">💕</div>
+            <p class="tap-hint">Devam etmek için dokun</p>
+        </div>
+    </div>
+
+    <!-- Menu Screen -->
+    <div id="menu-screen" class="screen">
+        <div class="menu-container">
+            <h1 class="menu-title">Bu Akşam</h1>
+            <p class="menu-subtitle">Birlikte güzel bir akşam geçirelim</p>
+            
+            <div class="menu-buttons">
+                <button class="menu-btn restaurant-btn" id="restaurant-btn" data-category="restaurant">
+                    <span class="btn-icon">🍽️</span>
+                    <span class="btn-text">Restoran Seçimi</span>
+                    <span class="btn-selection" id="restaurant-selection"></span>
+                </button>
+                
+                <button class="menu-btn dessert-btn" id="dessert-btn" data-category="dessert">
+                    <span class="btn-icon">🍰</span>
+                    <span class="btn-text">Tatlı Mekanı Seçimi</span>
+                    <span class="btn-selection" id="dessert-selection"></span>
+                </button>
+            </div>
+            
+            <button class="reset-btn" id="reset-btn" title="Sıfırla">
+                <span>↺</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Card Selection Screen -->
+    <div id="card-screen" class="screen">
+        <div class="card-screen-container">
+            <button class="back-btn" id="back-btn">← Geri</button>
+            
+            <h2 class="card-title" id="card-title">Restoran Seçimi</h2>
+            <p class="card-subtitle" id="card-subtitle">Bir kart seç</p>
+            
+            <div class="chosen-result" id="chosen-result">
+                <div class="confetti-container" id="confetti-container"></div>
+                <p class="chosen-text">Bu akşam buraya gidiyoruz!</p>
+                <h3 class="chosen-name" id="chosen-name"></h3>
+                <p class="chosen-type" id="chosen-type"></p>
+                <a class="maps-link" id="maps-link" href="#" target="_blank" rel="noopener">
+                    📍 Haritada Göster
+                </a>
+            </div>
+            
+            <div class="cards-grid" id="cards-grid"></div>
+            
+            <button class="reveal-all-btn" id="reveal-all-btn">Tümünü Göster</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
