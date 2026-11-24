@@ -749,6 +749,27 @@ body {
 }
 
 /* ===== TABLET LANDSCAPE (wider screens) ===== */
+@media (min-width: 900px) and (max-height: 900px) {
+    /* 6 columns for landscape tablets to reduce scrolling */
+    .cards-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    /* Smaller result box in landscape */
+    .chosen-result {
+        padding: 1.2rem 2rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .chosen-name {
+        font-size: 1.8rem;
+    }
+    
+    .chosen-type {
+        margin-bottom: 0.8rem;
+    }
+}
+
 @media (min-width: 900px) {
     /* Intro */
     .intro-text {
