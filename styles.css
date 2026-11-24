@@ -601,3 +601,217 @@ body {
         padding-bottom: calc(2rem + env(safe-area-inset-bottom));
     }
 }
+
+/* ===== TABLET STYLES (Portrait & Landscape) ===== */
+@media (min-width: 600px) {
+    /* Intro - larger text, better spacing */
+    .intro-text {
+        font-size: clamp(3rem, 8vw, 5rem);
+        white-space: nowrap;
+    }
+    
+    .heart-icon {
+        font-size: 5rem;
+    }
+    
+    .tap-hint {
+        font-size: 1.3rem;
+        margin-top: 3rem;
+    }
+    
+    /* Menu - wider container, larger elements */
+    .menu-container {
+        max-width: 500px;
+    }
+    
+    .menu-title {
+        font-size: 3.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .menu-subtitle {
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+    }
+    
+    .menu-buttons {
+        gap: 2rem;
+    }
+    
+    .menu-btn {
+        padding: 2rem 2.5rem;
+        border-radius: 25px;
+    }
+    
+    .btn-icon {
+        font-size: 3.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .btn-text {
+        font-size: 1.6rem;
+    }
+    
+    .btn-selection {
+        font-size: 1.1rem;
+        margin-top: 0.8rem;
+    }
+    
+    .reset-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        bottom: -80px;
+    }
+    
+    /* Card Screen - wider container, 4 columns */
+    .card-screen-container {
+        max-width: 680px;
+        padding: 1rem;
+    }
+    
+    .back-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .card-title {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .card-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    /* 4 cards per row on tablet */
+    .cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .card-front::before {
+        font-size: 3rem;
+    }
+    
+    .card-front::after {
+        font-size: 1.5rem;
+        bottom: 15px;
+    }
+    
+    .card-back-name {
+        font-size: 1.1rem;
+    }
+    
+    .card-back-type {
+        font-size: 0.85rem;
+    }
+    
+    /* Chosen result - larger */
+    .chosen-result {
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 25px;
+    }
+    
+    .chosen-text {
+        font-size: 1.1rem;
+    }
+    
+    .chosen-name {
+        font-size: 2.2rem;
+    }
+    
+    .chosen-type {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .maps-link {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+    
+    .reveal-all-btn {
+        padding: 1.2rem;
+        font-size: 1.2rem;
+        border-radius: 20px;
+    }
+    
+    .confetti {
+        font-size: 2rem;
+    }
+}
+
+/* ===== TABLET LANDSCAPE (wider screens) ===== */
+@media (min-width: 900px) {
+    /* Intro */
+    .intro-text {
+        font-size: 4.5rem;
+    }
+    
+    .heart-icon {
+        font-size: 6rem;
+    }
+    
+    .tap-hint {
+        font-size: 1.5rem;
+    }
+    
+    /* Menu - even larger */
+    .menu-container {
+        max-width: 550px;
+    }
+    
+    .menu-title {
+        font-size: 4rem;
+    }
+    
+    .menu-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .menu-btn {
+        padding: 2.5rem 3rem;
+    }
+    
+    .btn-icon {
+        font-size: 4rem;
+    }
+    
+    .btn-text {
+        font-size: 1.8rem;
+    }
+    
+    /* Card Screen - even wider */
+    .card-screen-container {
+        max-width: 800px;
+    }
+    
+    .card-title {
+        font-size: 3rem;
+    }
+    
+    .cards-grid {
+        gap: 1.2rem;
+    }
+    
+    .card-front::before {
+        font-size: 3.5rem;
+    }
+    
+    .card-back-name {
+        font-size: 1.2rem;
+    }
+    
+    .card-back-type {
+        font-size: 0.9rem;
+    }
+    
+    .chosen-name {
+        font-size: 2.5rem;
+    }
+}
