@@ -291,6 +291,7 @@ body {
 }
 
 .card-screen-container {
+    width: 100%;
     max-width: 500px;
     margin: 0 auto;
     padding-top: 0.5rem;
@@ -666,8 +667,9 @@ body {
     
     /* Card Screen - wider container, 4 columns */
     .card-screen-container {
-        max-width: 680px;
-        padding: 1rem;
+        width: 90%;
+        max-width: 700px;
+        padding: 1.5rem;
     }
     
     .back-btn {
@@ -788,7 +790,8 @@ body {
     
     /* Card Screen - even wider */
     .card-screen-container {
-        max-width: 800px;
+        width: 85%;
+        max-width: 900px;
     }
     
     .card-title {
